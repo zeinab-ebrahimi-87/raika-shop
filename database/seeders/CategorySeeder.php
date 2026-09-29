@@ -18,6 +18,7 @@ class CategorySeeder extends Seeder
             ['name' => 'شکلات شیری',     'slug' => 'milk-chocolate'],
             ['name' => 'شکلات سیگاری',   'slug' => 'cigarette-chocolate'],
             ['name' => 'شکلات تلخ',      'slug' => 'dark-chocolate'],
+            ['name' => 'بدون دسته', 'slug' => 'uncategorized'],
         ];
 
         foreach ($categories as $cat) {
