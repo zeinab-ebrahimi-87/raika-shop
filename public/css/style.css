@@ -3913,3 +3913,123 @@ nav[role="navigation"] .sr-only {
         padding: 3px 6px;
     }
 }
+
+/* ============================================
+   Password Field with Toggle — حرفه‌ای
+   ============================================ */
+
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-field input {
+    width: 100%;
+    padding-left: 55px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+/* دکمه‌ی چشم — ثابت وسط راست */
+.password-toggle {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #825B32;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    z-index: 2;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.password-toggle:hover {
+    background: #FFEAC5;
+    color: #603F26;
+}
+
+.password-toggle:focus-visible {
+    outline: 2px solid #603F26;
+    outline-offset: 2px;
+}
+
+/* ⚠️ نکته کلیدی: transform دکمه در :active ثابت بمونه */
+.password-toggle:active {
+    transform: translateY(-50%);
+}
+
+/* آیکون‌ها — دقیقاً وسط دکمه */
+.password-toggle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    stroke: currentColor;
+    fill: none;
+}
+
+/* چشم باز (پیش‌فرض) */
+.password-toggle .icon-eye {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+
+/* چشم خط‌خورده (مخفی) */
+.password-toggle .icon-eye-off {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5) rotate(-90deg);
+}
+
+/* حالت فعال — چشم خط‌خورده نشون داده میشه */
+.password-toggle.active {
+    background: linear-gradient(135deg, #603F26, #825B32);
+    color: #FFEAC5;
+    box-shadow: 0 4px 12px rgba(96, 63, 38, 0.3);
+}
+
+.password-toggle.active .icon-eye {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
+}
+
+.password-toggle.active .icon-eye-off {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+    .password-field input {
+        padding-left: 48px !important;
+    }
+    
+    .password-toggle {
+        width: 36px;
+        height: 36px;
+        left: 6px;
+    }
+    
+    .password-toggle svg {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -281,3 +281,21 @@ document.querySelectorAll('form').forEach(function(form) {
         }, 400);
     }
 })();
+
+function togglePassword(inputId, button) {
+    var input = document.getElementById(inputId);
+    
+    if (!input || !button) return;
+    
+    if (input.type === 'password') {
+        input.type = 'text';
+        button.classList.add('active');
+        button.setAttribute('aria-label', 'مخفی کردن رمز');
+    } else {
+        input.type = 'password';
+        button.classList.remove('active');
+        button.setAttribute('aria-label', 'نمایش رمز');
+    }
+    
+    input.focus();
+}
