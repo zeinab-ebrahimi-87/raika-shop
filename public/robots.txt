@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# صفحات ادمین رو ایندکس نکن
+Disallow: /admin/
+Disallow: /admin/*
+
+# صفحات کاربری
+Disallow: /cart
+Disallow: /checkout
+Disallow: /profile
+Disallow: /login
+Disallow: /register
+
+# فایل‌های سیستم
+Disallow: /storage/
+Disallow: /vendor/
+
+# Sitemap
+Sitemap: http://127.0.0.1:8000/sitemap.xml
