@@ -32,7 +32,7 @@
         
         <form method="POST" action="/logout">
             @csrf
-            <button type="submit" style="background: #d32f2f; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 1em; font-weight: bold; cursor: pointer; font-family: Tahoma, sans-serif;">
+            <button type="submit" style="background: #d32f2f; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 1em; font-weight: bold; cursor: pointer; ">
                 خروج از حساب
             </button>
         </form>

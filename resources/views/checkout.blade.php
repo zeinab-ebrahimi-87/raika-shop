@@ -65,7 +65,7 @@
                 <textarea name="notes" rows="2">{{ old('notes') }}</textarea>
             </div>
 
-            <button type="submit" style="width: 100%; background: #28a745; color: white; border: none; padding: 18px; border-radius: 12px; font-size: 1.1em; font-weight: bold; cursor: pointer; font-family: Tahoma;">
+            <button type="submit" style="width: 100%; background: #28a745; color: white; border: none; padding: 18px; border-radius: 12px; font-size: 1.1em; font-weight: bold; cursor: pointer; ">
                 ✅ ثبت سفارش
             </button>
         </form>

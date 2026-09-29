@@ -89,7 +89,6 @@
         font-size: 1.1em;
         font-weight: bold;
         cursor: pointer;
-        font-family: Tahoma, sans-serif;
         transition: 0.3s;
     }
     .btn-submit:hover {
