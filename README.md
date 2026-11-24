@@ -179,7 +179,7 @@
 
 ### 🍫 جزئیات محصول + اسلایدر
 
-<img src="screenshots/03-product-detail.png" alt="Product Detail" width="100%">
+<img src="screenshots/03-products-detail.png" alt="Product Detail" width="100%">
 
 ### 🛒 سبد خرید
 
