@@ -6,7 +6,7 @@
 
 <br>
 
-**فروشگاه اینترنتی کامل شکلات با Laravel 11**
+**فروشگاه اینترنتی کامل شکلات با Laravel**
 
 [![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
@@ -229,88 +229,6 @@
 
 ---
 
-## 🚀 نصب و راه‌اندازی
-
-### 📋 پیش‌نیازها
-
-قبل از شروع، مطمئن شو اینا نصب داری:
-
-- **PHP** >= 8.2
-- **Composer** ([getcomposer.org](https://getcomposer.org))
-- **MySQL** >= 8.0 (یا MariaDB)
-- **Git** ([git-scm.com](https://git-scm.com))
-
-### 📥 مراحل نصب
-
-```bash
-# 1. Clone کردن پروژه
-git clone https://github.com/YOUR-USERNAME/raika-shop.git
-cd raika-shop
-
-# 2. نصب پکیج‌های PHP
-composer install
-
-# 3. کپی فایل تنظیمات محیطی
-cp .env.example .env
-
-# 4. ساخت کلید اپلیکیشن
-php artisan key:generate
-
-# 5. تنظیم دیتابیس
-# فایل .env رو باز کن و این مقادیر رو تنظیم کن:
-# DB_DATABASE=raika_shop
-# DB_USERNAME=root
-# DB_PASSWORD=
-```
-
-### 🗄️ ساخت دیتابیس
-
-تو **phpMyAdmin** یک دیتابیس به اسم `raika_shop` بساز.
-
-### 🗃️ اجرای Migration و Seeder
-
-```bash
-# 6. ساخت جداول + داده‌های اولیه
-php artisan migrate --seed
-
-# 7. ساخت لینک استوریج (برای عکس‌ها)
-php artisan storage:link
-
-# 8. اجرای سرور
-php artisan serve
-```
-
-### ✅ تمام!
-
-برو آدرس: **http://127.0.0.1:8000**
-
----
-
-## 🔑 اطلاعات ورود پیش‌فرض
-
-بعد از اجرای `migrate --seed`، دو کاربر ساخته می‌شن:
-
-<table>
-<tr>
-<th>نقش</th>
-<th>ایمیل</th>
-<th>رمز عبور</th>
-</tr>
-<tr>
-<td>🎛️ <strong>ادمین</strong></td>
-<td><code>admin@raika.com</code></td>
-<td><code>password</code></td>
-</tr>
-<tr>
-<td>👤 <strong>کاربر عادی</strong></td>
-<td><code>user@raika.com</code></td>
-<td><code>password</code></td>
-</tr>
-</table>
-
-> ⚠️ **هشدار امنیتی:** در محیط production حتماً رمزها را تغییر دهید!
-
----
 
 ## 📂 ساختار پروژه
 
@@ -462,27 +380,6 @@ raika-shop/
 
 ---
 
-## 🤝 مشارکت
-
-اگه دوست داری تو این پروژه مشارکت کنی:
-
-```bash
-# 1. Fork کن
-# 2. Branch بساز
-git checkout -b feature/amazing-feature
-
-# 3. Commit کن
-git commit -m "Add amazing feature"
-
-# 4. Push کن
-git push origin feature/amazing-feature
-
-# 5. Pull Request باز کن
-```
-
----
-
-
 
 ## 📝 لایسنس
 
@@ -499,24 +396,5 @@ git push origin feature/amazing-feature
 **Full-Stack Developer**
 
 <br>
-
-[![GitHub](https://img.shields.io/badge/GitHub-YOUR-USERNAME-181717?style=for-the-badge&logo=github)](https://github.com/YOUR-USERNAME)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR-USERNAME)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:your@email.com)
-
 </div>
 
----
-
-
-<div align="center">
-
-### ⭐ اگه از این پروژه خوشت اومد، یه ستاره بده! ⭐
-
-ساخته شده با ❤️ و ☕ توسط **زینب ابراهیمی**
-
-<br>
-
-<sub>© 1404 (2025) - Raika Chocolate Shop</sub>
-
-</div>
